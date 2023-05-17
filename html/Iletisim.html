@@ -15,19 +15,19 @@
             <h2>İletişim Sayfası</h2>
             <div class="mb-3 mt-3">
                 <label for="isim" class="form-label">Adınız Soyadınız</label>
-                <input class="form-control" id="isim" placeholder="Adınız Soyadınız" type="text">
+                <input class="form-control" name="isim" id="isim" placeholder="Adınız Soyadınız" type="text">
             </div>
             <div class="mb-3 mt-3">
                 <label for="email" class="form-label">E-mail:</label>
-                <input type="text" class="form-control" id="email" placeholder="E-mail" name="email">
+                <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
               </div>
               <div class="mb-3">
             <div class="mb-3">
                 <label for="mesaj" class="form-label">Mesaj:</label><br>
-                <textarea id="mesaj" placeholder="Lütfen Mesajınızı Buraya Yazın.." cols="50" rows="10"></textarea>
+                <textarea name="mesaj" id="mesaj" placeholder="Lütfen Mesajınızı Buraya Yazın.." cols="50" rows="10"></textarea>
             </div>
             <div class="mb-3">
-                <button class="btn btn-primary" name="submit" type="submit" id="submit">GÖNDER</button>
+                <button class="btn btn-primary" name="submit" type="submit" id="submit">GÖNDER</input>
                 <button class="btn btn-warning" name="submit" type="reset" id="submit">TEMİZLE</button>
             </div>
         </form>
