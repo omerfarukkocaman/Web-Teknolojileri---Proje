@@ -5,13 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ana Sayfa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="..\css\style.css" rel="stylesheet">
   </head>
   <body>
-    
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="..\Anasayfa.php">Anasayfa</a>
+          
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="..\Anasayfa.php#kim">Hakkımda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Memleketim.html">Memleketim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Takimimiz.html">Takımımız</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Egitim.html">Eğitim Hayatım</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Hobilerim.html">Hobilerim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+    </header>
     <main>
+      <br>
       <div class="container d-flex align-items-center" style="width: 500px;">
-        <form id="contact" action="..\php\form.php" method="post">
+        <form onsubmit="return kontrol()" name="iletisim" id="contact" action="..\php\form.php" method="post">
             <h2>İletişim Sayfası</h2>
             <div class="mb-3 mt-3">
                 <label for="isim" class="form-label">Adınız Soyadınız</label>
@@ -19,7 +48,7 @@
             </div>
             <div class="mb-3 mt-3">
                 <label for="email" class="form-label">E-mail:</label>
-                <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
+                <input type="text" class="form-control" id="email" placeholder="E-mail" name="email">
               </div>
               <div class="mb-3">
             <div class="mb-3">
@@ -33,6 +62,51 @@
         </form>
     </div>
     </main>
+    <footer class="footer">
+      <br>
+      <br>
+      <br>
+      <div class="container-fluid bg-light fixed-bottom ">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Iletisim.html">İletişim</a>
+              </li>
+            </ul>
+            <span class="navbar-text ml-auto">
+              <a href="https://www.sakarya.edu.tr/" style="text-decoration: none;" target="_blank">Sakarya Üniversitesi</a> | Ömer Faruk KOCAMAN
+            </span>
+          </div>
+        </nav>
+      </div>
+    </footer>
+    <script>
+      function kontrol()
+      {
+        var Form = document.forms["iletisim"];
+        var Email=Form["email"].value;
+        var Mesaj=Form["mesaj"].value;
+        var Isim=Form["isim"].value;
+        var emailFormat = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
+        if(Isim=="")
+        {
+          alert("İsim alanı boş bırakılamaz!");
+          return false;
+        }
+        if(Email=="" || emailFormat.test(Email)==false)
+        {
+          alert("Lütfen geçerli bir email giriniz!");
+          return false;
+        }
+        if(Mesaj.length < 10 || Mesaj.length > 500)
+        {
+          alert("Mesajınız 10-500 karakter aralığında olmalı!");
+          return false;
+        }
+      }
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>
