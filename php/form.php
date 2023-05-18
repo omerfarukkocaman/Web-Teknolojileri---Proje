@@ -11,10 +11,14 @@ if(isset($_POST["isim"],$_POST["email"],$_POST["mesaj"]))
 
   $ekle="INSERT INTO mesajlar (isim, email, mesaj, kullaniciadi) 
   VALUES ('".$isim."','".$email."','".$mesaj."','".$kullaniciadi."')";
+  
 
   if($baglan->query($ekle)===TRUE)
   {
-    echo "<script>alert('Mesajınız Gönderildi.')</script>";
+    echo '<script>';
+    echo 'alert("Mesajınız Gönderildi.");';
+    echo 'window.location.href = "../html/Iletisim.html";'; 
+    echo '</script>';
   }
   else
   {
@@ -22,5 +26,6 @@ if(isset($_POST["isim"],$_POST["email"],$_POST["mesaj"]))
   }
 
 }
+
 
 ?>

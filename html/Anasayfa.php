@@ -31,7 +31,21 @@
                 <a class="nav-link active" aria-current="page" href="Hobilerim.html">Hobilerim</a>
               </li>
             </ul>
-            <button class="btn btn-primary" type="button" onclick="window.location.href='Login.html'">Giris Yap</button>
+            <button class="btn btn-primary" type="button" onclick="GirisCikis()">
+            <?php
+              session_start();
+              if($_SESSION['user']=="")
+              {
+                echo "Giris Yap";
+              }
+
+              else
+              {
+                echo $_SESSION["user"];
+              }
+
+            ?>
+            </button>
           </div>
         </div>
       </nav>
@@ -71,12 +85,28 @@
               </li>
             </ul>
             <span class="navbar-text ml-auto">
-              Sakarya Üniversitesi | Ömer Faruk KOCAMAN
+              <a href="https://www.sakarya.edu.tr/" style="text-decoration: none;" target="_blank">Sakarya Üniversitesi</a> | Ömer Faruk KOCAMAN
             </span>
           </div>
         </nav>
       </div>
     </footer>
+    <script>
+      function GirisCikis()
+      {
+        <?php
+          session_start();
+          if($_SESSION['user']=="")
+          {
+            echo 'window.location.href = "../html/Login.html";';
+          }
+          else
+          {
+            echo 'window.location.href = "../html/cikis.php";';
+          }
+        ?>
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>
