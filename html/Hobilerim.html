@@ -5,75 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ana Sayfa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="..\css\style.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid bg-info" style="margin-top: 8px;">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="..\Anasayfa.php">Anasayfa</a>
+          
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="..\Anasayfa.php#kim">Hakkımda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Memleketim.html">Memleketim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Takimimiz.html">Takımımız</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Egitim.html">Eğitim Hayatım</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Hobilerim.html">Hobilerim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+    </header>
+    <main>
+      <div class="container-fluid bg-info" style="margin-top: 8px;">
+        <div class="container">
+          <h1>HOBİLERİM</h1>
+        </div>
+      </div>
+      <br>
       <div class="container">
-        <h1>HOBİLERİM</h1>
-      </div>
-    </div>
-    <br>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2>FUTBOL</h2>
-          <p>
-            Fenerbahçeliyim. Çocukluğumdan beri sokakta top oynarım ve Fenerbahçeliyim. Belki de hayatta en sevdiğim 2 şey: <strong>Futbol</strong> ve <strong>Fenerbahçe</strong>.
-            Futbola önce oynayarak başladım. Tabiki bu sokakta başladı. Daha sonra Fenerbahçe' yi izlemeye başladım. Futbol tutkum günden güne artmaya başladıkça başka takımları da
-            izlemeye ve takip etmeye başladım. Bugüne geldiğimden elimden geldiği kadar çok maç izlemeye ve futbol oynamaya çalışıyorum. En büyük 2 zaafım <strong>Futbol</strong> ve <strong>Fenerbahçe</strong>.
-          </p>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>FUTBOL</h2>
+            <p>
+              Fenerbahçeliyim. Çocukluğumdan beri sokakta top oynarım ve Fenerbahçeliyim. Belki de hayatta en sevdiğim 2 şey: <strong>Futbol</strong> ve <strong>Fenerbahçe</strong>.
+              Futbola önce oynayarak başladım. Tabiki bu sokakta başladı. Daha sonra Fenerbahçe' yi izlemeye başladım. Futbol tutkum günden güne artmaya başladıkça başka takımları da
+              izlemeye ve takip etmeye başladım. Bugüne geldiğimden elimden geldiği kadar çok maç izlemeye ve futbol oynamaya çalışıyorum. En büyük 2 zaafım <strong>Futbol</strong> ve <strong>Fenerbahçe</strong>.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="..\img\fenerbahce.jpg" alt="" style="width: 100%;">
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="..\img\fenerbahce.jpg" alt="" style="width: 100%;">
+        <hr>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="..\img\basketbol.jpg" alt="" style="width: 100%;">
+          </div>
+          <div class="col-md-6">
+            <h2>BASKETBOL</h2>
+            <p>
+              Basketbola ilk olarak arkadaşım vasıtasıyla başladım. Onunla beraber amatör bir kulüpte yaklaşık 1 yıl oynadık. Daha sonrasında sıkılıp çıktık. Ama oynamayı bırakmadık.
+              Basketbol oynamaya başladığım dönemlerde <strong>Fenerbahçe</strong>' nin basketbolda iyi olması sebebiyle izlemeye de başladım. Daha sonra futbol gibi basketbol izlemek de
+              fazlasıyla hoşuma gitti. Şuanda çok fazla basket oynamasamda <strong>Fenerbahçe</strong>' nin basket maçlarını izliyorum.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <h2>FİLM-DİZİ İZLEMEK</h2>
+            <p>
+              Herkes gibi film ve dizi izlemeyi severim. Çoğunlukta dizi izlerim. Özellikler bir diziye başladığım zaman bitirene kadar izlerim. Günümün büyük bölümünü ayırabilirim.
+              Ama film konusunda okadar iddialı değilim. Henüz izlemediğim çok fazla popüler ve kaliteli filmler var. Ama benim pek hevesim yok.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="..\img\watch.jpg" alt="" style="width: 100%;">
+          </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="..\img\sahil.jpg" alt="" style="width: 100%;">
+          </div>
+          <div class="col-md-6">
+            <h2>GEZMEK</h2>
+            <p>
+              Gezmeyi severim ama belirli sınırlar içinde. Kalabalık ve kapalı yerlerden hiç hoşlanmam. Açık alan her zaman tercihimdir. Dolayısıyla AVM gibi yerler yerine daha çok sokakta vakit geçirmeyi,
+              sokakta yürümeyi severim. Deniz ve yeşil alana bakmak ve temiz hava almak her zaman tercihimdir. Bu sebeple sahilde veya ormanda yürümeyi çok severim. Kapalı olmasa da kalabalık yerler de çok
+              tercihim değildir. Genelde sakin yerleri tercih ederim. Sakin olması çok önemlidir.
+            </p>
+          </div>
         </div>
       </div>
-      <hr>
       <br>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="..\img\basketbol.jpg" alt="" style="width: 100%;">
-        </div>
-        <div class="col-md-6">
-          <h2>BASKETBOL</h2>
-          <p>
-            Basketbola ilk olarak arkadaşım vasıtasıyla başladım. Onunla beraber amatör bir kulüpte yaklaşık 1 yıl oynadık. Daha sonrasında sıkılıp çıktık. Ama oynamayı bırakmadık.
-            Basketbol oynamaya başladığım dönemlerde <strong>Fenerbahçe</strong>' nin basketbolda iyi olması sebebiyle izlemeye de başladım. Daha sonra futbol gibi basketbol izlemek de
-            fazlasıyla hoşuma gitti. Şuanda çok fazla basket oynamasamda <strong>Fenerbahçe</strong>' nin basket maçlarını izliyorum.
-          </p>
-        </div>
-      </div>
-      <hr>
+    </main>
+    <footer class="footer">
       <br>
-      <div class="row">
-        <div class="col-md-6">
-          <h2>FİLM-DİZİ İZLEMEK</h2>
-          <p>
-            Herkes gibi film ve dizi izlemeyi severim. Çoğunlukta dizi izlerim. Özellikler bir diziye başladığım zaman bitirene kadar izlerim. Günümün büyük bölümünü ayırabilirim.
-            Ama film konusunda okadar iddialı değilim. Henüz izlemediğim çok fazla popüler ve kaliteli filmler var. Ama benim pek hevesim yok.
-          </p>
-        </div>
-        <div class="col-md-4">
-          <img src="..\img\watch.jpg" alt="" style="width: 100%;">
-        </div>
-      </div>
-      <hr>
       <br>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="..\img\sahil.jpg" alt="" style="width: 100%;">
-        </div>
-        <div class="col-md-6">
-          <h2>GEZMEK</h2>
-          <p>
-            Gezmeyi severim ama belirli sınırlar içinde. Kalabalık ve kapalı yerlerden hiç hoşlanmam. Açık alan her zaman tercihimdir. Dolayısıyla AVM gibi yerler yerine daha çok sokakta vakit geçirmeyi,
-            sokakta yürümeyi severim. Deniz ve yeşil alana bakmak ve temiz hava almak her zaman tercihimdir. Bu sebeple sahilde veya ormanda yürümeyi çok severim. Kapalı olmasa da kalabalık yerler de çok
-            tercihim değildir. Genelde sakin yerleri tercih ederim. Sakin olması çok önemlidir.
-          </p>
-        </div>
+      <br>
+      <div class="container-fluid bg-light fixed-bottom ">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Iletisim.html">İletişim</a>
+              </li>
+            </ul>
+            <span class="navbar-text ml-auto">
+              <a href="https://www.sakarya.edu.tr/" style="text-decoration: none;" target="_blank">Sakarya Üniversitesi</a> | Ömer Faruk KOCAMAN
+            </span>
+          </div>
+        </nav>
       </div>
-    </div>
-    <br>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>
