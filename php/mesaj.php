@@ -9,8 +9,7 @@
   </head>
   <body>
     <main>
-      <div class="container">
-        <br>
+      <div class="container-fluid">
         <div class="row">
           <table class="table">
             <tr class="table-dark">
