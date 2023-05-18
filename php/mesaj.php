@@ -22,6 +22,18 @@
             </tr>
             <?php
 
+              session_start();
+              if($_SESSION["adminuser"]=="")
+              {
+                echo "<script>window.location.href = 'adminCikis.php'</script>";
+              }
+              else
+              {
+                echo '<button class="btn btn-danger" type="button" onclick="window.location.href=\'adminCikis.php\'">';
+                echo $_SESSION["adminuser"];
+                echo " | Cikis Yap";
+                echo '</button>';
+                
                 include("baglanti.php");
 
                 $sec= "Select * from mesajlar";
@@ -41,7 +53,9 @@
                         </tr>
                          ";
                     }
-                }
+                }  
+              }
+              
 
             ?>
           </table>

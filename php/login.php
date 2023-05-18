@@ -17,7 +17,6 @@ if(isset($_POST["email"], $_POST["pswd"]))
   }
   else
   {
-    echo "<script>alert('Kullanıcı adı veya sifre yanlış')</script>";
     echo '<script>';
     echo 'alert("Kullanıcı adı veya sifre yanlış");';
     echo 'window.location.href = "../html/Login.html";'; 
